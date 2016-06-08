@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginscreen_bg" >  
+    
+    <RelativeLayout
+        android:id="@+id/enquiry_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp" >
+
+        <!-- <ImageView
+            android:id="@+id/ic_drMyExbs"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/titlebar_menu_selector" /> -->
+
+        <TextView
+            android:id="@+id/enquiry_heading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/enquiry_form"
+            android:textColor="@color/White"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp" />
+        
+        <ImageView
+            android:id="@+id/enquiry_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_bar_back"
+            android:padding="10dp"
+            android:clickable="true"
+            android:onClick="Back"/>
+        
+         <TextView
+	        android:id="@+id/enquiry_seperator"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_below="@+id/enquiry_heading_text"
+	        android:background="@color/divider" />
+        
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/enquiry_heading">
+    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingBottom="10dp">
+	    
+		    <EditText
+		       android:id="@+id/enquiry_company_name"
+		       android:layout_width="310dp"
+		       android:layout_height="50dp"
+		       android:layout_margin="5dp"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/company_name"		       
+		       android:inputType="text"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"
+		       android:singleLine="true"/>
+		    
+		    <EditText
+		       android:id="@+id/enquiry_contact_person"
+		       android:layout_width="310dp"
+		       android:layout_height="50dp"
+		       android:layout_margin="5dp"
+		       android:layout_below="@+id/enquiry_company_name"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/contact_person"
+		       android:inputType="text"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"
+		       android:singleLine="true"/>
+		    
+		    <EditText
+		       android:id="@+id/enquiry_designation"
+		       android:layout_width="310dp"
+		       android:layout_height="50dp"
+		       android:layout_margin="5dp"
+		       android:layout_below="@+id/enquiry_contact_person"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/designation"
+		       android:inputType="text"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"
+		       android:singleLine="true"/>
+		    
+		    <EditText
+		       android:id="@+id/enquiry_address"
+		       android:layout_width="310dp"
+		       android:layout_height="50dp"
+		       android:layout_margin="5dp"
+		       android:layout_below="@+id/enquiry_designation"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/address"
+		       android:inputType="text"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"
+		       android:singleLine="true"/>		    
+		    
+		     
+		     <Spinner
+		        android:id="@+id/enquiry_country"
+		        android:layout_width="310dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@+id/enquiry_address"
+		        android:layout_margin="4dp"
+		        android:background="@drawable/rounded_spinner"
+		        android:textColor="@android:color/white"
+		        android:spinnerMode="dropdown"
+			 	android:popupBackground="#A9A9A9" />
+		    
+		    <EditText
+		       android:id="@+id/enquiry_city"
+		       android:layout_width="310dp"
+		       android:layout_height="50dp"
+		       android:layout_margin="5dp"
+		       android:layout_below="@+id/enquiry_country"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/city"
+		       android:inputType="text"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"
+		       android:singleLine="true"/>
+		    
+		     
+		     <EditText
+		       android:id="@+id/enquiry_email"
+		       android:layout_width="310dp"
+		       android:layout_height="50dp"
+		       android:layout_below="@+id/enquiry_city"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/email"
+		       android:inputType="textEmailAddress"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"
+		       android:singleLine="true"/>
+		     
+		     <EditText
+		       android:id="@+id/enquiry_contact"
+		       android:layout_width="310dp"
+		       android:layout_height="50dp"
+		       android:layout_margin="5dp"
+		       android:layout_below="@+id/enquiry_email"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/contact_no"
+		       android:inputType="phone"
+		       android:maxLength="10"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"
+		       android:singleLine="true"/>
+		    
+		    <Spinner
+		        android:id="@+id/enquiry_type"
+		        android:layout_width="310dp"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@+id/enquiry_contact"
+		        android:layout_margin="4dp"
+		        android:background="@drawable/rounded_spinner"
+		        android:textColor="@color/White"
+		        android:spinnerMode="dropdown"
+			 	android:popupBackground="#A9A9A9" />
+		    
+		    <EditText
+		       android:id="@+id/enquiry_comment"
+		       android:layout_width="310dp"
+		       android:layout_height="wrap_content"
+		       android:layout_margin="5dp"
+		       android:lines="8" 
+		       android:minLines="3"
+		       android:maxLines="10"
+		       android:layout_below="@+id/enquiry_type"
+		       android:background="@drawable/enquiry_form_edit_background"
+		       android:textColorHint="@android:color/white"
+		       android:textColor="@android:color/white"
+		       android:layout_centerHorizontal="true"
+		       android:hint="@string/comment"
+		       android:inputType="textMultiLine"
+		       android:paddingLeft="5dp"
+		       android:paddingRight="10dp"
+		       android:textSize="15dp"/>
+		    
+		    <Button
+               android:id="@+id/enquiry_submit"
+               android:layout_width="310dp"
+               android:layout_height="35dp"
+               android:layout_margin="5dp"
+               android:layout_below="@+id/enquiry_comment"
+               android:background="@drawable/pink_line"
+               android:layout_centerHorizontal="true"
+               android:text="@string/submit"
+               android:textColor="@color/White"
+               android:textSize="18dp"
+               android:onClick="SubmitEnquiry"/>
+	    
+	    </RelativeLayout>
+	    
+    </ScrollView>
+	    
+
+</RelativeLayout>

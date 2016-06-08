@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">expoMagik</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="info">        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.        </string>
+    <string name="fb_app_id">988562461201854</string> <!-- /1567964130135713 -->
+    <!-- <string name="fb_app_secret">4e6edb2c780c007c0d5d598495a06be7</string> -->
+
+    <string name="fb_app_secret">8cc8685d460f4a2cf03f329efb078c72</string>
+
+    <!-- Twitter Configurations -->
+     
+     
+   <!--  <string name="twitter_callback">http://www.expomagik.com</string>
+    <string name="twitter_consumer_key">bN0KMlYH7BHqMyEYtRNKAVvO0</string>
+    <string name="twitter_consumer_secret">mxZaba8u1j6TPPY9z3ZZMX7tBQ6DHcR9g3PBaewdKxqeCRCnqD</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string> -->
+     
+     
+        <!-- Twitter Configurations by hemant-->
+    <string name="twitter_callback">http://www.expomagik.com</string>
+    <string name="twitter_consumer_key">Xe2sHDnAY5pHpUJquX9y2Zfeb</string>
+    <string name="twitter_consumer_secret">gQVH1N7jKXHeqvIIS8nM0qwlyH09ZMbOvkEtU8lirG4afllC3q</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    
+    
+    
+    <!-- End Configurations -->
+
+    <string name="title_activity_detail_view">DetailView</string>
+    <string name="button_placeholder_text">Button</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="dashed_area_text">Cool information you might would like to know, that is why it is in this dashed area!</string>
+    <string name="show">Show</string>
+    <string name="show_dialog_text">Show a Custom Dialog and Loader</string>
+    <string name="text_input_hint">text input</string>
+    <string name="four">Four</string>
+    <string name="three">Three</string>
+    <string name="two">Two</string>
+    <string name="one">One</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="like">Like</string>
+    <string name="reply">Reply</string>
+    <string name="detail_title_placeholder">Cool Title Of Some Movie</string>
+    <string name="contact_placeholder">Super useful contact info here I guess.\n\nProfile image is from FreePik.com</string>
+    <string name="social_1_placeholder">4.8</string>
+    <string name="social_1_placeholder_nr">15</string>
+    <string name="sumary_placeholder">Summary</string>
+    <string name="description_placeholder">Description</string>
+    <string name="description_tab_1">Wall</string>
+    <string name="description_tab_2">Contact</string>
+    <string name="image_description">Image Description</string>
+    <string name="description_title_placeholder">Cool Title Of Some Movie</string>
+    <string name="social_2_placeholder">Hotels &amp; Clubs</string>
+    <string name="social_3_placeholder">From 2 PM</string>
+    <string name="app_title">Clear UI Kit</string>
+    <string name="explore">Explore</string>
+    <string name="buy">"  Buy  "</string>
+    <string name="hidden_view_text">Click Me</string>
+    <string name="list_title_placeholder">Amazing Title</string>
+    <string name="list_description_placeholder">Cool Content Description of Item</string>
+    <string name="list_number_text_placeholder">Characters</string>
+    <string name="list_number_placeholder">27</string>
+    <string name="dialog_text_placeholder">With Custom loader (loader is also usable separately)</string>
+    <string name="dialog_title_placeholder">Styled Dialog</string>
+    <string name="dialog_button_text">" Cancel "</string>
+    <string name="placeholder_views">16 Thousand</string>
+    <string name="views">Views</string>
+    <string name="followers_placeholder">503</string>
+    <string name="followers">Followers</string>
+        
+   <!-- enquiry_form -->
+   	<string name="enquiry_form">Exhibitor Enquiry</string>
+    <string name="company_name">Company Name</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="designation">Designation</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="email">Email ID</string>
+    <string name="contact_no">Contact Number</string>
+    <string name="comment">Tell us more about your requirement to help us serve you better</string>
+    <string name="submit">Submit</string>
+
+</resources>

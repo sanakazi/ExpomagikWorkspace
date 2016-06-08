@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginscreen_bg">    
+
+    <RelativeLayout android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">        
+        
+         <ImageView
+            android:id="@+id/ic_drGridExb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:onClick="backToOrganiser"
+            android:clickable="true"
+            android:background="@drawable/title_bar_back" />
+        
+        <TextView android:id="@+id/text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Organiser Events"
+            android:layout_centerInParent="true"/>
+        
+        
+        
+    </RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/info_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_top"
+        android:layout_weight="1.0"
+        android:fillViewport="true">
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    
+    <TextView
+        android:id="@+id/dividerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divider" />
+    
+    
+    
+    <TextView android:id="@+id/text_comp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comp name"
+        android:textColor="#fb1189"        
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"/>
+    
+   <TextView android:id="@+id/text_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="country"
+        android:layout_below="@+id/text_comp_name"
+        
+        android:textColor="#25aae1"
+       android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="18sp"/>
+   
+    <TextView android:id="@+id/text_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:layout_below="@+id/text_country"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"/>
+    
+    
+     <TextView android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone"
+        android:layout_below="@+id/text_city"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"/>
+     
+     <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"        
+        android:layout_below="@+id/text_phone"
+       android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+         
+     <TextView 
+        android:id="@+id/text_aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aboutus"
+        android:textSize="15sp"
+        android:ellipsize="end"/>
+     
+     </ScrollView>
+    
+    <!--  <TextView
+        android:id="@+id/dividerLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_phone"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divider" />
+      -->
+     
+     
+     
+     
+     
+     
+   <!--  <GridView
+        android:id="@+id/grid_exb1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/dividerLogin1"
+        android:layout_marginTop="5dp"
+        android:fastScrollEnabled="true"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" /> -->
+        <!-- 
+         <com.callndata.utils.GridViewScrollable
+	        android:id="@+id/grid_exb1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="300dp"
+	        android:layout_below="@+id/dividerLogin1"
+	        android:layout_weight="1"
+	        android:layout_marginTop="5dp"
+	        android:fastScrollEnabled="true"
+	        android:gravity="center"
+	        android:horizontalSpacing="10dp"
+	        android:numColumns="2"
+	        android:stretchMode="columnWidth"
+	        android:verticalSpacing="20dp"
+	        android:layout_alignParentBottom="true"/> -->
+         
+    </RelativeLayout>
+          
+  </ScrollView>
+  
+    
+     
+     <TextView android:id="@+id/text_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:textColor="#fe873c"
+        android:layout_below="@+id/info_scroll"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="22sp"/>     
+     
+     
+     <TextView
+        android:id="@+id/dividerLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_event"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divider" />
+  
+    
+         <com.conceptcandy.expomagik.utils.GridViewScrollable
+	        android:id="@+id/grid_exb1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/dividerLogin1"
+	        android:layout_weight="1"
+	        android:layout_marginTop="5dp"
+	        android:fastScrollEnabled="true"
+	        android:gravity="center"
+	        android:horizontalSpacing="10dp"
+	        android:numColumns="2"
+	        android:stretchMode="columnWidth"
+	        android:verticalSpacing="20dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dp"/>
+  
+     
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialoge"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:background="@color/White" >
+
+    <TextView
+        android:id="@+id/logoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily=""
+        android:text="Are You Sure ?"
+        android:textColor="@android:color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/blank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text=" "
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnLogoutYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutTitle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/blank"
+        android:background="@drawable/button_selector"
+        android:text="Yes"
+        android:textColor="@color/White"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/btnLogoutNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutTitle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/blank"
+        android:background="@drawable/button_selector"
+        android:text="No"
+        android:textColor="@color/White"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_below="@id/btnLogoutYes"
+        android:layout_centerHorizontal="true"
+        android:text=" "
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+</RelativeLayout>

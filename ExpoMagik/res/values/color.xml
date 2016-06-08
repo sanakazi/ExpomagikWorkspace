@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="theme_color">#ff33b5e5</color>
+ <!-- Main color, used for buttons & layouts as default -->
+    <color name="sub_color">#cccccc</color>
+ <!-- Color used in the bar below the title, with actions -->
+    <color name="bar_color">#676767</color>
+    <color name="bar_color_transparent">#86676767</color>
+    <color name="bar_separator_color">#ebebeb</color>
+    <color name="white_transparent">#D9FFFFFF</color>
+ <!-- Used as background in some activities -->
+    <color name="gray_transparent">#A61F1F21</color>
+    <color name="gray">#1F1F21</color>
+    <color name="green">#FF99CC00</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="White">#FFFFFF</color>
+    <color name="off_White">#FDFDFD</color>
+    <color name="text_blue">#007BFF</color>
+    <color name="divider">#D0D5D8</color>
+    <color name="line">#D0D5D8</color>
+    <color name="blue_font">#ff33b5e5</color>
+    <color name="battleship_grey">#848482</color>
+    <color name="font_grey">#B9C1C8</color>
+    <color name="rounded_gray_border">#D0D5D8</color>
+    <color name="list_item_title">#214463</color>
+    <color name="scrollbar_bg">#E6E9EB</color>
+    <color name="sel_font_sBar">#1E5D8A</color>
+    <color name="LTGrey">#CCCCCC</color>
+    <color name="nodatafound_bg">#E6E6EA</color>
+    <color name="new_text_color">#3f3f3f</color>
+    <color name="blue_text_color">#1176bc</color>
+    <color name="pink_text_color">#c51867</color>
+    
+    <color name="ftr_blue">#1176bc</color>
+    <color name="ftr_pink">#c51867</color>
+    <color name="ftr_purple">#92278f</color>
+    <color name="ftr_green">#0d7c37</color>
+    <color name="ftr_darkpurple">#662e91</color>
+    <color name="ftr_orange">#ed8812</color>
+    
+    <color name="ml_pink">#e62179</color>
+    <color name="ml_yellow">#f0911e</color>
+    <color name="ml_green">#0f9444</color>
+    <color name="ml_blue">#25a6db</color>
+    <color name="ml_purple">#642c8d</color>
+
+    <color name="pink">#e62179</color>
+    <color name="trans30">#4DFFFFFF</color>
+    <color name="trans10">#1AFFFFFF</color>
+
+</resources>

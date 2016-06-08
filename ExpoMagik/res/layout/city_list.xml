@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreen_bg" >
+
+    <!-- Header Starts here -->
+
+    <RelativeLayout
+        android:id="@+id/rllogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/cityListHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select City"
+            android:textColor="@color/White"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/search_background"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/rllogin"
+        android:background="@drawable/search_bg"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchItems"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/imgSearch"
+            android:layout_toRightOf="@+id/cl_back_arrow"
+            android:layout_weight="0.30"
+            android:background="@color/White"
+            android:gravity="center_vertical"
+            android:hint="Search.."
+            android:padding="3dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_search"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/cl_back_arrow"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imgSearch"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/titlebar_menu_selector" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dividerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/search_background"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/divider" />
+
+    <!-- Header Ends here -->
+
+
+    <!-- Main Screen Starts here -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dividerLogin"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/listCities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:layout_marginBottom="2dp"/>
+    </LinearLayout>
+
+    <!-- Main Screen Ends here -->
+
+</RelativeLayout>

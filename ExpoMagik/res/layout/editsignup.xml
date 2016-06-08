@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreen_bg" >
+
+    <!-- Header Starts here -->
+
+   <RelativeLayout
+        android:id="@+id/rllogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp" >
+
+     <ImageView
+            android:id="@+id/ic_drMyExbs"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_bar_back" /> 
+
+        <TextView
+            android:id="@+id/headTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Update Profile"
+            android:textColor="@color/White"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp" />
+        
+         <TextView
+        android:id="@+id/dividerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/headTxt"
+        android:background="@color/divider" />
+        
+    </RelativeLayout>
+   
+    <!-- Header Ends here -->
+
+
+    <!-- Main Screen Starts here -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rllogin"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/reg_username"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/White"
+                    android:gravity="center_vertical"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                
+
+                <EditText
+                    android:id="@+id/reg_mobile"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/White"
+                    android:gravity="center_vertical"
+                    android:hint="Mobile Number"
+                    android:inputType="numberSigned"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/reg_phone"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/White"
+                    android:gravity="center_vertical"
+                    android:hint="Phone Number"
+                    android:inputType="numberSigned"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <RadioGroup
+                        android:id="@+id/radioIndividual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <RadioButton
+                            android:id="@+id/rdo_indiviual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:checked="true"
+                            android:paddingLeft="5dp"
+                            android:text="Individual"
+                            android:textColor="@color/White" />
+
+                        <RadioButton
+                            android:id="@+id/rdo_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:paddingLeft="5dp"
+                            android:text="Company"
+                            android:textColor="@color/White" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/reg_comapny"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/White"
+                    android:gravity="center_vertical"
+                    android:hint="Company"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/reg_designation"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/White"
+                    android:gravity="center_vertical"
+                    android:hint="Designation"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                
+
+                <EditText
+                    android:id="@+id/reg_city"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/White"
+                    android:gravity="center_vertical"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btn_Registration"
+                    android:layout_width="280dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/pink_line"
+                    android:gravity="center"
+                    android:text="Update"
+                    android:textColor="@color/White"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Main Screen Ends here -->
+
+</RelativeLayout>

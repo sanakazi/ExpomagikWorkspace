@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_container"
+    android:gravity="center_horizontal" >
+    
+    <!--  
+    <com.callndata.expomagik.util.ResizableImageView
+        android:id="@+id/imgHomePager"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stub" />
+        
+        -->
+    
+    <ImageView
+        android:id="@+id/imgHomePager"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logo" />
+    
+    
+
+    <TextView
+        android:id="@+id/pagerwhiteLine"
+        android:layout_width="300dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/imgHomePager"
+        android:layout_centerHorizontal="true"
+        android:background="@color/White" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pagerwhiteLine"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black" >
+
+        
+
+        <TextView
+            android:id="@+id/txtHomeFromToDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:textColor="@color/White"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtHomeVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHomeFromToDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:textColor="@color/White"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

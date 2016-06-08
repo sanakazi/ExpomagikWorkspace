@@ -1,0 +1,78 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Main Screen Content -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+    </FrameLayout>
+
+    <!-- Drawer Design -->
+
+    <RelativeLayout
+        android:id="@+id/navDrawerView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@color/White" >
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            android:background="@color/White"
+            android:choiceMode="singleChoice"
+            android:divider="#C4DCE6"
+            android:dividerHeight="1dp" />
+
+        <!-- Imageview to display slider menu -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_above="@+id/list_profile"
+            android:background="@color/White" >
+
+            <ImageView
+                android:id="@+id/drawer_bottom_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile_bg" />
+
+            <TextView
+                android:id="@+id/username_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/username_bottom_margin"
+                android:layout_marginLeft="@dimen/username_margin"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/profile_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/dp_bottom_margin"
+                android:layout_marginLeft="@dimen/dp_left_margin" />
+        </FrameLayout>
+        <!-- Listview to display slider menu -->
+
+        <ListView
+            android:id="@+id/list_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/list_item_title"
+            android:choiceMode="singleChoice" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

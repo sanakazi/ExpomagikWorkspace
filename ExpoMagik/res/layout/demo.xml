@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+     >
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:orientation="horizontal"
+         android:weightSum="3" >
+                
+                    <LinearLayout
+		                android:id="@+id/eb_agenda"
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:layout_marginBottom="10dp"
+		                android:layout_marginLeft="10dp"
+		                android:layout_marginTop="5dp"
+		                android:background="@color/trans30"
+		                android:gravity="center_vertical"
+		                android:padding="5dp" 
+		                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/agenda" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Agenda"
+                    android:textColor="@color/White"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+                
+                 
+            <LinearLayout
+                android:id="@+id/eb_visitors"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/trans30"
+                android:gravity="center_vertical"
+                android:padding="5dp" 
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/eb_txtVisitors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Visitors"
+                    android:textColor="@color/White"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/eb_speakers"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/trans30"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/speaker" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:text="Speaker"
+                    android:textColor="@color/White"
+                    android:textSize="11dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+             
+             
+             </LinearLayout>
+
+</RelativeLayout>
